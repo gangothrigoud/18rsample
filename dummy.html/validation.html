@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  validation</title>
+</head>
+<body>
+    <form action="./response.html" method="post" >
+        <input type="text" name="number"
+         required 
+        placeholder="phone number"
+        id="number"
+         pattern="\+91[6-9]\d{9}"
+        title=" should follow indian format(+91) the length should be 9">
+        <br>
+        <input type="submit">
+    
+    </form>
+    <form action="./response.html" method="post" >
+        <input type="text" name="email "
+         required 
+        placeholder="email"
+        id="email"
+         pattern="[a-z._\d]+@[a-z]+\.[a-z]{2,}"
+        title=" folow format use@ and . compulsory">
+        <br>
+        <input type="submit">
+        </form>
+        <form action="./response.html" method="post" >
+            <input type="text" name="password "
+             required 
+            placeholder="password"
+            id="password"
+             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[@#!*]).{8,16}"
+            title=" the length of password should be 8,16 and it should contain 1 small,1 capital,1 digit, 1 special character">
+            <br>
+            <input type="submit">
+        </form>
+            <form action="./response.html" method="post" >
+                <label for="day">Day:</label>
+                <input type="number" id="day"name="day"min="1"max="31" required>
+                <label for="month"> month </label>
+                <input type="number" id="day"name="day"min="1"max="12" required>
+                <label for="year"> year </label>
+                <input type="number" id="day"name="day"min="1"max="3000" required>
+                 
+                
+            
+                <br>
+                <input type="submit">
+                </form>
+                <form action="./response.html" method="post" >
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username required"
+                     
+                     pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[@#!*]).{8,16}">
+                    <title=" The field must have numbers,letters and no special chars">
+                    <br>
+                    <input type="submit">
+                    </form>
+
+</body>
+</html>
