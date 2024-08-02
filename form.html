@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FORM TAGS</title>
+</head>
+<body>
+    <h2>ENTER ANY ONE CHARACTER</h2>
+    <form action="pattern.html"post" >
+        <input type="text" name="username" required 
+        placeholder="enter username" pattern="[abc]"
+        title="enter any one charatcet">
+        <input type="submit">
+    </form><br>
+
+
+
+    <form action="pattern.html" method="post" >
+        <input type="text" name="username" required 
+        placeholder="enter number" pattern="[0-9]"
+        title="enter any one charatcet">
+        <input type="submit">
+    </form><br>
+
+    <form action="pattern.html" method="post" >
+        <input type="text" name="username" required 
+        placeholder="enter number" pattern="[1234]"
+        title="enter any one charatcet">
+        <input type="submit">
+    </form><br>
+
+    <form action="pattern.html" method="post">
+        <h2>MULTIPLE CHARACTERS: </h2>
+        <input type="text" name="username" required placeholder="enter number"
+        pattern="[A-Z]+">
+        <input type= "Submit">
+    </form><br>
+
+
+    <form action="pattern.html" method="post">
+        <input type="number" name="username" required placeholder="enter number"
+        pattern="/d+">
+        <input type= "Submit">
+
+    </form><br>
+
+    <form action="pattern.html">
+        <input type="text" name="username" required placeholder="enter number"
+        pattern="[a-z]+">
+        <input type= "Submit">
+
+    </form><br>
+    <form action="pattern.html" method="post">
+        <h2>ALL  a-zA-Z/d !@#$</h2>
+        <input type="text" name="username" required placeholder="enter number"
+        pattern="[a-zA-Z/d@#$]+">
+        <input type="submit">
+    </form><br>
+    <form action="pattern.html" method="post">
+        <h2>Range</h2>
+        <input type="text" name="usernmae" required 
+        pattern="[a-z]{3,7}"
+        title="length of username b/w 3 to 7 characters">
+        <input type="submit">
+    </form>
+</html>
